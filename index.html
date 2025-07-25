@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Sneakers</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Sneakers</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#brands" class="nav-link">Top Brands</a></li>
+                <li><a href="#offers" class="nav-link">Special Offers</a></li>
+                <li><a href="#releases" class="nav-link">New Releases</a></li>
+            </ul>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Step Into The Future</h1>
+                        <p class="hero-subtitle">Discover premium sneakers that define your style. From limited editions
+                            to classic favorites, find your perfect pair at Kickverse.</p>
+                        <button class="cta-button" onclick="showSection('brands')">Explore Collection</button>
+                    </div>
+                    <div class="hero-shoe">
+                        <div class="floating-shoe"><img src="./assets/pngwing.com.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="shoes-div">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/pngwing.com.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text">
+                            <h2 class="shoe-title">Nike Air Zoom Pegasus 40</h2>
+                            <p class="shoe-description">
+                                Premium comfort and futuristic design, built for high-speed performance.
+                            </p>
+
+                            <div class="price-section">
+                                <span class="price">$120</span>
+                                <span class="old-price">$150</span>
+                                <span class="discount">20% OFF</span>
+                            </div>
+
+                            <button class="view-button" onclick="showSection('offers')">
+                                <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                                </svg>
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/pngwing.com (1).png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text">
+                            <h2 class="shoe-title">Nike Air Zoom Pegasus 40</h2>
+                            <p class="shoe-description">
+                                Premium comfort and futuristic design, built for high-speed performance.
+                            </p>
+
+                            <div class="price-section">
+                                <span class="price">$120</span>
+                                <span class="old-price">$150</span>
+                                <span class="discount">20% OFF</span>
+                            </div>
+
+                            <button class="view-button" onclick="showSection('offers')">
+                                <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                                </svg>
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/pngwing.com (2).png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text">
+                            <h2 class="shoe-title">Nike Air Zoom Pegasus 40</h2>
+                            <p class="shoe-description">
+                                Premium comfort and futuristic design, built for high-speed performance.
+                            </p>
+
+                            <div class="price-section">
+                                <span class="price">$120</span>
+                                <span class="old-price">$150</span>
+                                <span class="discount">20% OFF</span>
+                            </div>
+
+                            <button class="view-button" onclick="showSection('offers')">
+                                <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                                </svg>
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/pngwing.com (3).png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text">
+                            <h2 class="shoe-title">Nike Air Zoom Pegasus 40</h2>
+                            <p class="shoe-description">
+                                Premium comfort and futuristic design, built for high-speed performance.
+                            </p>
+
+                            <div class="price-section">
+                                <span class="price">$120</span>
+                                <span class="old-price">$150</span>
+                                <span class="discount">20% OFF</span>
+                            </div>
+
+                            <button class="view-button" onclick="showSection('offers')">
+                                <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                                </svg>
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/pngwing.com (4).png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text">
+                            <h2 class="shoe-title">Nike Air Zoom Pegasus 40</h2>
+                            <p class="shoe-description">
+                                Premium comfort and futuristic design, built for high-speed performance.
+                            </p>
+
+                            <div class="price-section">
+                                <span class="price">$120</span>
+                                <span class="old-price">$150</span>
+                                <span class="discount">20% OFF</span>
+                            </div>
+
+                            <button class="view-button" onclick="showSection('offers')">
+                                <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                                </svg>
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/pngwing.com (5).png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text">
+                            <h2 class="shoe-title">Nike Air Zoom Pegasus 40</h2>
+                            <p class="shoe-description">
+                                Premium comfort and futuristic design, built for high-speed performance.
+                            </p>
+
+                            <div class="price-section">
+                                <span class="price">$120</span>
+                                <span class="old-price">$150</span>
+                                <span class="discount">20% OFF</span>
+                            </div>
+
+                            <button class="view-button" onclick="showSection('offers')">
+                                <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+                                </svg>
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Top Brands Section -->
+        <section id="brands" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Top Brands</h2>
+                    <p class="section-subtitle">Explore premium sneakers from the world's leading brands</p>
+                </div>
+                <div class="grid brands-grid">
+                    <div class="brand-card">
+                        <div class="brand-logo"><img src="./assets/nike-logo.png" alt=""></div>
+                        <div class="brand-name">Nike</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-logo"><img src="./assets/adidas-logo.png" alt=""></div>
+                        <div class="brand-name">Adidas</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-logo"><img src="./assets/puma-logo.png" alt=""></div>
+                        <div class="brand-name">Puma</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-logo"><img src="./assets/jordan-logo.png" alt=""></div>
+                        <div class="brand-name">Jordan</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-logo"><img src="./assets/converse-logo.png" alt=""></div>
+                        <div class="brand-name">Converse</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-logo"><img src="./assets/vans-logo.png" alt=""></div>
+                        <div class="brand-name">Vans</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section id="offers" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Special Offers</h2>
+                    <p class="section-subtitle">Don't miss these incredible deals on premium sneakers</p>
+                </div>
+                <div class="grid products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (1).png" alt="">
+                            <div class="product-badge badge-hot">🔥 Hot</div>
+                        </div>
+                        <h3 class="product-title">Air Max Pro</h3>
+                        <div class="product-price">$129.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Air Max Pro', 129.99, '👟')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (2).png" alt="">
+                            <div class="product-badge badge-sale">💸 50% Off</div>
+                        </div>
+                        <h3 class="product-title">Urban Runner</h3>
+                        <div class="product-price">$89.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Urban Runner', 89.99, '🦶')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (3).png" alt="">
+                            <div class="product-badge badge-top">⭐ Top Rated</div>
+                        </div>
+                        <h3 class="product-title">Speed Demon</h3>
+                        <div class="product-price">$159.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Speed Demon', 159.99, '🏃')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (4).png" alt="">
+                            <div class="product-badge badge-top">⭐ Top Rated</div>
+                        </div>
+                        <h3 class="product-title">Speed Demon</h3>
+                        <div class="product-price">$159.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Speed Demon', 159.99, '🏃')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (5).png" alt="">
+                            <div class="product-badge badge-top">⭐ Top Rated</div>
+                        </div>
+                        <h3 class="product-title">Speed Demon</h3>
+                        <div class="product-price">$159.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Speed Demon', 159.99, '🏃')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (6).png" alt="">
+                            <div class="product-badge badge-top">⭐ Top Rated</div>
+                        </div>
+                        <h3 class="product-title">Speed Demon</h3>
+                        <div class="product-price">$159.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Speed Demon', 159.99, '🏃')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (7).png" alt="">
+                            <div class="product-badge badge-top">⭐ Top Rated</div>
+                        </div>
+                        <h3 class="product-title">Speed Demon</h3>
+                        <div class="product-price">$159.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Speed Demon', 159.99, '🏃')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (8).png" alt="">
+                            <div class="product-badge badge-top">⭐ Top Rated</div>
+                        </div>
+                        <h3 class="product-title">Speed Demon</h3>
+                        <div class="product-price">$159.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Speed Demon', 159.99, '🏃')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.png" alt="">
+                            <div class="product-badge badge-top">⭐ Top Rated</div>
+                        </div>
+                        <h3 class="product-title">Speed Demon</h3>
+                        <div class="product-price">$159.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Speed Demon', 159.99, '🏃')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Releases Section -->
+        <section id="releases" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">New Releases</h2>
+                    <p class="section-subtitle">Fresh drops and latest arrivals</p>
+                </div>
+                <div class="grid products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (3).png" alt="">
+                            <div class="product-badge badge-hot">New Drop</div>
+                        </div>
+                        <h3 class="product-title">Thunder Strike</h3>
+                        <div class="product-price">$199.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Thunder Strike', 199.99, '⚡')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (5).png" alt="">
+                            <div class="product-badge badge-sale">Limited</div>
+                        </div>
+                        <h3 class="product-title">Galaxy Walker</h3>
+                        <div class="product-price">$249.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Galaxy Walker', 249.99, '🌟')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./assets/pngwing.com (7).png" alt="">
+                            <div class="product-badge badge-top">New</div>
+                        </div>
+                        <h3 class="product-title">Rocket Boost</h3>
+                        <div class="product-price">$179.99</div>
+                        <div class="product-controls">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Rocket Boost', 179.99, '🚀')">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" onclick="toggleCart()"></div>
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cartItems">
+            <p style="text-align: center; color: #666; margin-top: 2rem;">Your cart is empty</p>
+        </div>
+        <div id="cartTotal"
+            style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--bg-tertiary); font-size: 1.2rem; font-weight: bold;">
+            Total: $0.00
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
